@@ -4,14 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Document</title>
-    <h1>Contact Title</h1>
+    <h1>Contact</h1>
 </head>
 <body>
     <nav>
-        <a href="index.html"> Home</a>
-        <a href="projects/index.html"> Projects</a>
-        <a href="contact/index.html"> Contact</a>
-        <a href="https://github.com/etflores1" target = "_blank"> GitHub Link</a>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="resume/index.html">Resume/CV</a></li>
+            <li><a href="../projects/index.html">Projects</a></li>
+            <li><a href="../contact/index.html">Contact</a></li>
+            <li><a href="https://github.com/etflores1" target="_blank">GitHub Link</a></li>
+        </ul>
     </nav>
+    <form action="mailto:etflores@ucsd.edu" method="POST" enctype="text/plain">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        
+        <label for="subject">Subject:</label>
+        <input id="subject" name="subject">
+        
+        <label for="body">Body:</label>
+        <textarea id="body" name="body"></textarea>
+        
+        <button>Submit</button>
+    </form>
 </body>
 </html>
