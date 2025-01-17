@@ -54,8 +54,12 @@ a:hover {
 }
 
 input,
-textarea,
+textarea {
+    font: inherit;
+}
+
 button {
+    grid-column: 1 / -1;
     font: inherit;
 }
 
@@ -70,10 +74,6 @@ form {
     grid-template-columns: auto 1fr;
     /* grid-column: 1 / -1;3git st */
     gap: 1em;
-}
-
-button {
-    grid-column: 1 / -1; 
 }
 
 .projects {
