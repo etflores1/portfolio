@@ -62,13 +62,18 @@ button {
 form {
     /* display: block;
     width: 100%;
-    box-sizing: border-box;
     margin-block: 0.5em; */
 
+    /* box-sizing: border-box; */
+    /* display: block; */
     display: grid;
     grid-template-columns: auto 1fr;
     grid-column: 1 / -1;
     gap: 1em;
+}
+
+button {
+    grid-column: 1 / -1; 
 }
 
 .projects {
