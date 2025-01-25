@@ -75,4 +75,3 @@ select.addEventListener('input', function (event) {
     localStorage.colorScheme = event.target.value;
   });
 
-  
