@@ -28,10 +28,10 @@ let pages = [
   { url: 'https://github.com/etflores1', title: 'Github Link' },
 ];
 
-const ARE_WE_HOME = document.documentElement.classList.contains('home');
-
 let nav = document.createElement('nav');
 document.body.prepend(nav);
+
+const ARE_WE_HOME = document.documentElement.classList.contains('home');
 
 for (let p of pages) {
   let url = p.url;
@@ -42,16 +42,16 @@ for (let p of pages) {
   let a = document.createElement('a');
   a.href = url;
   a.textContent = title;
-
-  if (a.host === location.host && a.pathname === location.pathname) {
-    a.classList.add('current');
-  }
-
-  if (a.host !== location.host) {
-    a.target = "_blank";
-  }
-
   nav.append(a);
+
+  a.classList.toggle(
+    'current',
+    a.host === location.host && a.pathname === location.pathname
+  );
+
+  if (a.host != location.host) {
+      a.target = "_blank"
+  }
 }
 
 document.body.insertAdjacentHTML(
