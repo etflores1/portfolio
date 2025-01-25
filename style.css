@@ -25,16 +25,18 @@ nav {
     margin-bottom: 0.5em;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: oklch(80% 3% 200);
+    border-bottom-color: oklch(50% 10% 200 / 40%);
 }
 
 nav a {
-    flex: 1
+    flex: 1;
+    color: white; 
+
 }
 
 a.current {
     border-bottom-width: 0.4em;
-    border-bottom-color: oklch(80% 3% 200);
+    border-bottom-color: oklch(50% 10% 200 / 40%);
     padding-bottom: 0.5em;
     border-bottom-style: solid;
 
@@ -50,7 +52,7 @@ a:hover {
     border-bottom-color: var(--color-accent);
     padding-bottom: 0.5em;
     border-bottom-style: solid;
-    background-color: oklch(from var(--color-accent) 95% 5% h);
+    background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
 }
 
 input,
@@ -113,3 +115,21 @@ h1, h2, h3, h4, h5, h6 {
 .resume nav, .resume h1 {
     text-align: center;
 }
+
+/* For theme changing */
+  
+html {
+    color-scheme: light dark;
+    color: canvastext;
+  }
+
+.color-scheme {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 80%;
+    font-family: inherit;
+    }
