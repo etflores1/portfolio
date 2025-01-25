@@ -4,16 +4,7 @@ function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
 }
 
-// const navLinks = Array.from($$("nav a"));
-// console.log(navLinks);
-
-// let currentLink = navLinks.find(
-//     (a) => a.host === location.host && a.pathname === location.pathname
-//   );
-
-// if (currentLink) {
-// currentLink.classList.add('current');
-// }
+let basePath = window.location.pathname.startsWith('/repository-name') ? '/repository-name/' : '/';
 
 let pages = [
     { url: '', title: 'Home' },
@@ -32,7 +23,7 @@ for (let p of pages) {
     let url = p.url;
     let title = p.title;
 
-    url = !ARE_WE_HOME && !url.startsWith('http') ? '../' + url : url;
+    url = !ARE_WE_HOME && !url.startsWith('http') ? basePath + url : url;
 
     let a = document.createElement('a');
     a.href = url;
@@ -45,9 +36,8 @@ for (let p of pages) {
     );
     
     if (a.host != location.host) {
-        a.target = "_blank"
+        a.target = "_blank";
     }
-    
 }
 
 document.body.insertAdjacentHTML(
@@ -73,5 +63,4 @@ select.addEventListener('input', function (event) {
     console.log('color scheme changed to', event.target.value);
     document.documentElement.style.setProperty('color-scheme', event.target.value);
     localStorage.colorScheme = event.target.value;
-  });
-
+});
