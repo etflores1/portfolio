@@ -30,8 +30,6 @@ nav {
 
 nav a {
     flex: 1;
-    color: white; 
-
 }
 
 a.current {
@@ -117,6 +115,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* For theme changing */
+
+
   
 html {
     color-scheme: light dark;
