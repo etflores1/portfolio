@@ -4,8 +4,6 @@ function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
 }
 
-const BASE_PATH = window.location.pathname.split('/').slice(0, -1).join('/') + '/';
-
 let pages = [
     { url: '', title: 'Home' },
     { url: 'projects/', title: 'Projects' },
@@ -17,13 +15,15 @@ let pages = [
 let nav = document.createElement('nav');
 document.body.prepend(nav);
 
+const BASE_PATH = window.location.hostname === 'etflores1.github.io' ? '/portfolio/' : '/';
+
+const ARE_WE_HOME = document.documentElement.classList.contains('home');
+
 for (let p of pages) {
     let url = p.url;
     let title = p.title;
 
-    if (!url.startsWith('http')) {
-        url = BASE_PATH + url;
-    }
+    url = !url.startsWith('http') ? BASE_PATH + url : url;
 
     let a = document.createElement('a');
     a.href = url;
