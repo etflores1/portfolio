@@ -8,13 +8,13 @@
     {
         "title": "Signature Detection & Extraction",
         "year": "2023",
-        "image": "../images/signature.png",
+        "image": "https://private-user-images.githubusercontent.com/110417575/272145362-0642fc84-19d8-4bea-a495-d7cf430f11fd.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzgzOTUwNDIsIm5iZiI6MTczODM5NDc0MiwicGF0aCI6Ii8xMTA0MTc1NzUvMjcyMTQ1MzYyLTA2NDJmYzg0LTE5ZDgtNGJlYS1hNDk1LWQ3Y2Y0MzBmMTFmZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjAxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIwMVQwNzI1NDJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kNjIyZjc5ZjIwZDgwNjZhODE0MzNjOWNmOWQ4OWJmZDg5YzFjNmU2NTllYzRiODY0NTViMTEyZDFjYzgzZmVkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.n8wA8-bRjamumuV7ct3BzqhChO7V6XVvnpssISkGHaU",
         "description": "Machine Learning and artificial intelligence project concerning the detection, extraction, and translation of signature from online documents. Used various tools like Python, TensorFlow, OpenCV, NumPy, and Pandas. Group project for ACM @ UCSD"
     },
     {
         "title": "Real Estate Database Management",
         "year": "2023",
-        "image": "../images/dashboard.png",
+        "image": "https://private-user-images.githubusercontent.com/110417575/277501875-9c114e92-d3b6-42c6-ab61-99259e9f12cd.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzgzOTUwNDEsIm5iZiI6MTczODM5NDc0MSwicGF0aCI6Ii8xMTA0MTc1NzUvMjc3NTAxODc1LTljMTE0ZTkyLWQzYjYtNDJjNi1hYjYxLTk5MjU5ZTlmMTJjZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjAxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIwMVQwNzI1NDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03Y2NjN2VkMmY4Mjc5MDFiMmFhNmI5ZTVjNmFhYmU4Zjg2Y2FiOTI3ZTg3OTYxMjk2MDkwZmYzZjczNDdmNjYyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.O-nbewXUIE01tXCDrmq4nH5vb2f9lQjIc6Cv7X2584A",
         "description": "Utilized SQL to query and clean various datasets from a local database. Leveraged Tableau to make engaging dashboard to draw impactful insights."
     },
     {
