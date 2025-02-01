@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Google Play Store Analysis",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNLsc6CJ0sbjGPPbWqIs5P5ir89biksbO3Yw&s",
+        "description": "Exploratory Data Analysis (EDA) in Python on the Google Play Store dataset on Kaggle. Using Pandas, Numpy, Matplotlib, and Seaborn, I was able to draw insights form the data while also pairing it with visualizations to communicate my findings."
+    },
+    {
+        "title": "Signature Detection & Extraction",
+        "image": "../images/signature.png",
+        "description": "Machine Learning and artificial intelligence project concerning the detection, extraction, and translation of signature from online documents. Used various tools like Python, TensorFlow, OpenCV, NumPy, and Pandas. Group project for ACM @ UCSD"
+    },
+    {
+        "title": "Real Estate Database Management",
+        "image": "../images/dashboard.png",
+        "description": "Utilized SQL to query and clean various datasets from a local database. Leveraged Tableau to make engaging dashboard to draw impactful insights."
+    }
+]

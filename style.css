@@ -131,3 +131,34 @@ html {
     font-size: 80%;
     font-family: inherit;
     }
+
+
+#profile-stats {
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1rem;
+    text-align: center;
+    }
+    
+#profile-stats dl {
+    display: contents; 
+}
+
+#profile-stats dt {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: rgb(182, 182, 182);
+    grid-row: 1; 
+}
+
+#profile-stats dd {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 600;
+    grid-row: 2; 
+    color: inherit;
+}
