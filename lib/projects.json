@@ -8,13 +8,13 @@
     {
         "title": "Signature Detection & Extraction",
         "year": "2023",
-        "image": "../images/signature.png",
+        "image": "https://user-images.githubusercontent.com/22610163/47317435-38003480-d652-11e8-87be-0d93ea9e119a.png",
         "description": "Machine Learning and artificial intelligence project concerning the detection, extraction, and translation of signature from online documents. Used various tools like Python, TensorFlow, OpenCV, NumPy, and Pandas. Group project for ACM @ UCSD"
     },
     {
         "title": "Real Estate Database Management",
         "year": "2023",
-        "image": "../images/dashboard.png",
+        "image": "https://www.slideteam.net/wp/wp-content/uploads/2024/01/Real-Estate-Property-Management-Dashboard-with-Leasing-Status-1024x576.png",
         "description": "Utilized SQL to query and clean various datasets from a local database. Leveraged Tableau to make engaging dashboard to draw impactful insights."
     },
     {
