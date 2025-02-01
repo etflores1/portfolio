@@ -2,19 +2,19 @@
     {
         "title": "Google Play Store Analysis",
         "year": "2024",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNLsc6CJ0sbjGPPbWqIs5P5ir89biksbO3Yw&s",
+        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
         "description": "Exploratory Data Analysis (EDA) in Python on the Google Play Store dataset on Kaggle. Using Pandas, Numpy, Matplotlib, and Seaborn, I was able to draw insights form the data while also pairing it with visualizations to communicate my findings."
     },
     {
         "title": "Signature Detection & Extraction",
         "year": "2023",
-        "image": "https://user-images.githubusercontent.com/22610163/47317435-38003480-d652-11e8-87be-0d93ea9e119a.png",
+        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
         "description": "Machine Learning and artificial intelligence project concerning the detection, extraction, and translation of signature from online documents. Used various tools like Python, TensorFlow, OpenCV, NumPy, and Pandas. Group project for ACM @ UCSD"
     },
     {
         "title": "Real Estate Database Management",
         "year": "2023",
-        "image": "https://danielcorcoranssql.wordpress.com/wp-content/uploads/2017/03/2017-03-15-16_46_32-realesatemarch-power-bi-desktop.png?w=1200",
+        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
         "description": "Utilized SQL to query and clean various datasets from a local database. Leveraged Tableau to make engaging dashboard to draw impactful insights."
     },
     {
