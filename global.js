@@ -95,15 +95,30 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
     for (let project of projects) {
         const article = document.createElement('article');
 
+        const contentDiv = document.createElement('div');
+        contentDiv.style.display = 'flex';
+        contentDiv.style.flexDirection = 'column';
+        contentDiv.style.gap = '10px';
+
         article.innerHTML = `
             <${headingLevel}>${project.title || 'Untitled Project'}</${headingLevel}>
             <img src="${project.image || ''}" alt="${project.title || 'Project Image'}">
-            <p>${project.description || 'No description available.'}</p>
         `;
 
+        const descriptionElement = document.createElement('p');
+        descriptionElement.innerText = project.description || 'No description available.';
+        contentDiv.appendChild(descriptionElement);
+
+        const yearElement = document.createElement('p');
+        yearElement.innerHTML = `<strong>Year:</strong> ${project.year || 'N/A'}`;
+        yearElement.style.fontStyle = 'italic';
+        contentDiv.appendChild(yearElement);
+
+        article.appendChild(contentDiv);
         containerElement.appendChild(article);
     }
 }
+
 
 export async function fetchGitHubData(username) {
     return fetchJSON(`https://api.github.com/users/${username}`);

@@ -15,7 +15,7 @@
         "title": "Real Estate Database Management",
         "year": "2023",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
-        "description": "Utilized SQL to query and clean various datasets from a local database. Leveraged Tableau to make engaging dashboard to draw impactful insights."
+        "description": "Utilized SQL to query and clean various datasets from a multi-dimensional database. Leveraged Tableau to make an engaging and interactive dashboard to draw impactful insights. Employed filtering, aggregations, view tables, grouping, and table alteration."
     },
     {
         "title": "Lorem ipsum dolor sit.",
