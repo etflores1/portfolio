@@ -1,0 +1,125 @@
+Skip to main content
+Logo
+DSC 106 - WI25
+–
+Ed Discussion
+
+20+
+
+
+New Thread
+Search
+Filter
+Use left and right arrow keys to adjust the split region size
+Step 0.3: Don't Have ".github/workflows/deploy.yml" in Repo #354
+Anonymous
+6 days ago in Labs – Lab 6
+
+Star
+
+Watch
+
+290
+22
+99
+00
+Views
+
+Hello,
+
+In step 0.3 in Lab 6, it says to open ".github/workflows/deploy.yml", but I don't seem to have this in my repo? Do we need to make this manually? If we need to make it manually, what contents should go in this file?
+
+Comment
+
+1 Answer
+Smruthi Gowtham
+5 days ago
+
+3
+
+Hi, it doesn't have to be deploy.yml. Assuming that you have some .yml file set up to trigger Github actions for page deployment (generally present in .github/workflows), use that file for this step. 
+
+If you are setting it up for the first time, here is a sample of what my file looks like:
+
+Comment
+
+Your Answer
+
+
+Paragraph
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Simple workflow for deploying static content to GitHub Pages
+name: Deploy static content to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ['main']
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
+
+jobs:
+  # Single deploy job since we're just deploying
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: '0'
+      - name: Run Elocuent
+        run: |
+          npx elocuent -d . -o meta/loc.csv
+
+      - name: Commit and Push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          mkdir -p meta
+          git pull
+          git add -f meta/loc.csv
+          git commit -m "Update code statistics" || echo "No changes to commit"
+          git push
+          
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: '.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
