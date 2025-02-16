@@ -259,52 +259,102 @@ path {
     border-radius: 8px;
     color: var(--text-color); 
 
-  }
+}
   
-  .stats dt {
+.stats dt {
     font-size: 0.75rem;
     font-weight: bold;
     text-transform: uppercase;
     color: inherit;
     letter-spacing: 0.01rem;
     grid-row: 1;
-  }
+}
   
-  .stats dd {
+.stats dd {
     font-size: 2rem;
     font-weight: 700;
     color: inherit;
     margin: 0;
     grid-row: 2;
-  }
+}
   
-  .gridlines line {
+.gridlines line {
     stroke: rgba(200, 200, 200, 0.4);
     stroke-width: 1px;
     stroke-dasharray: 4 4;
-  }
+}
   
-  dl.info {
+dl.info {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 0.5em 1em;
     margin: 0;
     padding: 0.8em;
     font-size: 0.9rem;
-  }
+}
   
-  dl.info dt {
+dl.info dt {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 0.8rem;
     color: #777;
-  }
+}
   
-  dl.info dd {
+dl.info dd {
     font-weight: 600;
+    margin: 0;
+}
+  
+/* Grid layout for the tooltip */
+dl.info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5px;
     margin: 0;
   }
   
+/* Tooltip Styling */
+.tooltip {
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    padding: 10px;
+    backdrop-filter: blur(5px);
+    font-size: 14px;
+    transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
+    pointer-events: none;
+    visibility: hidden; 
+    opacity: 0;
+  }
   
+  /* Hide tooltip initially */
+  .tooltip[hidden] {
+    opacity: 0;
+    visibility: hidden;
+  }
   
+  /* Style for the dots on hover */
+  circle {
+    transition: 200ms;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
   
+  circle:hover {
+    transform: scale(1.5);
+  }
+
+  svg {
+    pointer-events: all;
+  }
+  
+  .dots circle {
+    pointer-events: all;
+  }
+
+  circle.selected {
+    fill: #ff6b6b;
+  }
